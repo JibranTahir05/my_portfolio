@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #2b5876, #4e4376);
+  color: #f5f5f5; /* light text */
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent dark overlay */
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  border-radius: 12px;
+  color: #f5f5f5; /* ensures text inside is light */
+}
+h1 {
+  font-size: 2.5rem;
+  color: #2b7a78;
+  margin-bottom: 0;
+}
+
+h2 {
+  border-left: 4px solid #2b7a78;
+  padding-left: 10px;
+  color: #2b7a78;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+button {
+  background-color: #2b7a78;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #205f5a;
+}
+
+/* Animation base */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.contact-button button {
+  background-color: #2b7a78;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-button button:hover {
+  background-color: #205f5a;
+}
+
+#contact-info {
+  font-size: 1rem;
+  color: #ffffff;
+}
